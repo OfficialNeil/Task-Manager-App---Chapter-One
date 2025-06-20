@@ -38,7 +38,7 @@ A beautiful and intuitive task management application built with React Native an
 1. **Clone the repository** (if applicable):
    ```bash
    git clone <repository-url>
-   cd task-manager-app
+   cd project
    ```
 
 2. **Install dependencies**:
@@ -55,29 +55,6 @@ A beautiful and intuitive task management application built with React Native an
    - **Web**: The app will automatically open in your browser
    - **Mobile**: Scan the QR code with the Expo Go app
    - **Simulator**: Press 'i' for iOS simulator or 'a' for Android emulator
-
-## Project Structure
-
-```
-├── app/                    # App routes and screens
-│   ├── (tabs)/            # Tab-based navigation
-│   │   ├── index.tsx      # All tasks screen
-│   │   ├── active.tsx     # Active tasks screen
-│   │   └── completed.tsx  # Completed tasks screen
-│   └── _layout.tsx        # Root layout configuration
-├── components/            # Reusable UI components
-│   ├── TaskInput.tsx      # Task creation input
-│   ├── TaskItem.tsx       # Individual task component
-│   ├── TaskList.tsx       # Task list container
-│   └── TaskStats.tsx      # Statistics display
-├── context/               # React Context for state management
-│   └── TaskContext.tsx    # Global task state
-├── hooks/                 # Custom React hooks
-│   ├── useTasks.ts        # Task management logic
-│   └── useFrameworkReady.ts # Framework initialization
-└── types/                 # TypeScript type definitions
-    └── Task.ts            # Task-related types
-```
 
 ## Usage Instructions
 
@@ -128,25 +105,6 @@ This app is designed to work on:
 - **TypeScript**: Static type checking
 - **@types/react**: Type definitions for React
 
-## Development Notes
-
-### Animations
-All animations use React Native Reanimated for optimal performance:
-- Task completion toggles include scale animations
-- Delete operations fade out smoothly
-- UI interactions provide immediate visual feedback
-
-### Accessibility
-The app includes:
-- Proper touch targets for all interactive elements
-- Clear visual hierarchies
-- Intuitive navigation patterns
-
-### Performance
-- Efficient FlatList rendering for large task lists
-- Optimized re-renders using React.memo and useCallback
-- Minimal state updates for smooth user experience
-
 ## Future Enhancements
 
 Potential features for future versions:
@@ -156,16 +114,3 @@ Potential features for future versions:
 - Data persistence with local storage
 - Sync with cloud services
 - Dark mode support
-
-## Contributing
-
-When contributing to this project:
-1. Follow the existing code style and patterns
-2. Add TypeScript types for all new features
-3. Include animations for user interactions
-4. Test on both web and mobile platforms
-5. Update documentation for new features
-
-## License
-
-This project is for educational and demonstration purposes.
