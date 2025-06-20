@@ -12,6 +12,11 @@ interface TaskInputProps {
   onAddTask: (text: string) => void;
 }
 
+
+// TaskInput.tsx
+// This component provides an input field and button for adding new tasks.
+// It manages the input state and calls onAddTask when a new task is submitted.
+
 export function TaskInput({ onAddTask }: TaskInputProps) {
   const [text, setText] = useState('');
 

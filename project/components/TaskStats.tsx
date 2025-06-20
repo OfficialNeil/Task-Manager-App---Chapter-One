@@ -7,6 +7,10 @@ interface TaskStatsProps {
   completedTasks: number;
 }
 
+// TaskStats.tsx
+// This component displays statistics about the tasks: total, active, completed, and progress percentage.
+
+
 export function TaskStats({ totalTasks, activeTasks, completedTasks }: TaskStatsProps) {
   const completionRate = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
 

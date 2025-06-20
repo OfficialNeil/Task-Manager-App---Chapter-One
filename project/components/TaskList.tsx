@@ -16,6 +16,10 @@ interface TaskListProps {
   emptyMessage?: string;
 }
 
+// TaskList.tsx
+// This component renders a list of tasks using FlatList.
+// It displays TaskItem components and shows an empty state if there are no tasks.
+
 export function TaskList({
   tasks,
   onToggleTask,

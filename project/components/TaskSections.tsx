@@ -18,6 +18,10 @@ interface TaskSectionsProps {
   onClearCompleted: () => void;
 }
 
+// TaskSections.tsx
+// This component displays two sections: Active Tasks and Completed Tasks.
+// It renders TaskItem components for each task and provides UI to clear completed tasks.
+
 export function TaskSections({
   activeTasks,
   completedTasks,

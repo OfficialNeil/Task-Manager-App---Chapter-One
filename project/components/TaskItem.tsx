@@ -16,6 +16,11 @@ import Animated, {
 import { Check, Trash2 } from 'lucide-react-native';
 import { Task } from '@/types/Task';
 
+
+// TaskItem.tsx
+// This component represents a single task item with toggle and delete functionality.
+// It uses animations for interactions and displays task status and dates.
+
 interface TaskItemProps {
   task: Task;
   onToggle: (id: string) => void;
